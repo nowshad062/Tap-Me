@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIAlertViewDelegate>{
+    
+    
+    IBOutlet UILabel *scorelabel;
+    IBOutlet UILabel *timerlabel;
+    
+    NSInteger count;
+    NSInteger second;
+    NSTimer *timer;
+       
+}
+- (IBAction)buttonPressed;
 
 @end
